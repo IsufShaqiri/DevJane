@@ -1,8 +1,6 @@
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
@@ -10,19 +8,20 @@
 
 :root {
   --ff-primary: "Poppins", sans-serif;
-  --ff-secondary: "Poppins", monospace;
+  --ff-secondary: "Poppins", sans-serif;
 
   --fw-reg: 300;
+  --fw-italic: 700;
   --fw-bold: 900;
 
-  --clr-light: #fff;
-  --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-light: #bcb8b1;
+  --clr-dark: #403d39;
+  --clr-accent: #54b1d7;
 
-  --fs-h1: 2.75rem;
-  --fs-h2: 2.15rem;
-  --fs-h3: 1.15rem;
-  --fs-body: 0.8rem;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
@@ -40,9 +39,9 @@
 /* General styles */
 
 /* endable this to add smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
+/* html {
+    scroll-behavior: smooth;
+} */
 
 body {
   background: var(--clr-light);
@@ -132,12 +131,15 @@ h3 {
   background: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
+  font-style: italic;
+  font-weight: var(--ff-italic);
   margin-bottom: 1em;
 }
 
 .section__subtitle--work {
   color: var(--clr-accent);
-  font-weight: var(--fw-bold);
+  font-style: italic;
+  font-weight: var(--fw-italic);
   margin-bottom: 2em;
 }
 
@@ -419,7 +421,7 @@ header {
 /* footer */
 
 .footer {
-  background: #111;
+  background: #343a40;
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
@@ -437,7 +439,7 @@ header {
 
 .footer__link:hover,
 .social-list__link:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .footer__link:hover {
